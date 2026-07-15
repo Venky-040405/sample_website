@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import MovieForm from "../components/MovieForm";
 
-const API = "http://localhost:3000/new_routes";
+const API = "https://your-backend.up.railway.app/new_routes";
 
 function AddMovie() {
 
