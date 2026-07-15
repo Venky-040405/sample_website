@@ -9,7 +9,14 @@ const port = 5000;
 connectDB();
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://your-frontend.up.railway.app"
+    ]
+  })
+);
 app.use("/new_routes", new_routes);
 
 
