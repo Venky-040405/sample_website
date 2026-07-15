@@ -8,4 +8,11 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+   preview: {
+    host: "0.0.0.0",
+    port: 5173,
+    allowedHosts: [
+      "samplewebsite-production-648a.up.railway.app"
+    ]
+  }
 })
