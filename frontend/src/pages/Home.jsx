@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
 
-const API = "http://localhost:3000/new_routes";
+const API = "https://your-backend.up.railway.app/new_routes";
 
 function Home() {
   const [movies, setMovies] = useState([]);
